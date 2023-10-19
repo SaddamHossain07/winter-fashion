@@ -5,6 +5,7 @@ import AddProduct from "../Pages/AddProduct/AddProduct";
 import MyCart from "../Pages/MyCart/MyCart";
 import Login from "../Pages/Authentication/Login";
 import Products from "../Pages/AddProduct/Products/Products";
+import Register from "../Pages/Authentication/Register";
 
 const Routes = createBrowserRouter([
     {
@@ -23,7 +24,7 @@ const Routes = createBrowserRouter([
             {
                 path: '/products',
                 element: <Products></Products>,
-                loader: () => fetch('http://localhost:5000/products')
+                loader: () => fetch('https://winter-fashion-server-hazel.vercel.app/products')
             },
             {
                 path: '/myCart',
@@ -32,6 +33,10 @@ const Routes = createBrowserRouter([
             {
                 path: '/login',
                 element: <Login></Login>
+            },
+            {
+                path: '/register',
+                element: <Register></Register>
             },
         ]
     }
