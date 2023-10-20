@@ -1,6 +1,10 @@
+
 import { NavLink } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ updatedSiteInfo }) => {
+
+    const { siteName, siteLogo } = updatedSiteInfo
+
     const links = <>
         <li>
             <NavLink to="/" className={({ isActive, isPending }) =>
@@ -34,7 +38,7 @@ const Navbar = () => {
         </li>
     </>
     return (
-        <div className="navbar bg-base-100 shadow-lg">
+        <div className="navbar bg-base-100 shadow-lg py-4">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -44,7 +48,10 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <img className="h-16" src="https://i.ibb.co/YfbvWZr/7570000.jpg" alt="" />
+                <div className="flex gap-2">
+                    <img className="h-10" src={siteLogo} alt="" />
+                    <h2 className="text-3xl font-bold text-sky-500">{siteName}</h2>
+                </div>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

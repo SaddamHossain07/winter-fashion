@@ -1,10 +1,13 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLoaderData } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
 
 const Layout = () => {
+    const siteConfig = useLoaderData()
+    const updatedSiteInfo = siteConfig[siteConfig.length - 1]
+
     return (
         <div className="max-w-[1280px] mx-auto">
-            <Navbar></Navbar>
+            <Navbar updatedSiteInfo={updatedSiteInfo}></Navbar>
             <Outlet></Outlet>
         </div>
     );

@@ -4,10 +4,23 @@ const CreateBrand = () => {
     const handleAddBrand = e => {
         e.preventDefault()
         const form = e.target
-        const brandName = form.brandName.value
+        const brandName = form.brandName.value.toLowerCase()
         const brandLogo = form.brandLogo.value
         const newBrand = { brandName, brandLogo }
         console.log(newBrand)
+
+        fetch('http://localhost:5000/brands', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(newBrand)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                alert('brand created successfully')
+            })
     }
 
     return (
