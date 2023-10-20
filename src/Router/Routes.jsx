@@ -6,6 +6,9 @@ import MyCart from "../Pages/MyCart/MyCart";
 import Login from "../Pages/Authentication/Login";
 import Products from "../Pages/AddProduct/Products/Products";
 import Register from "../Pages/Authentication/Register";
+import Dashboard from "../Pages/Dashboard/Dashboard";
+import SiteConfig from "../Pages/Dashboard/SiteConfig";
+import CreateBrand from "../Pages/Dashboard/CreateBrand";
 
 const Routes = createBrowserRouter([
     {
@@ -38,6 +41,20 @@ const Routes = createBrowserRouter([
                 path: '/register',
                 element: <Register></Register>
             },
+            {
+                path: '/dashboard',
+                element: <Dashboard></Dashboard>,
+                children: [
+                    {
+                        path: '/dashboard/site-config',
+                        element: <SiteConfig></SiteConfig>
+                    },
+                    {
+                        path: '/dashboard/create-brand',
+                        element: <CreateBrand></CreateBrand>
+                    }
+                ]
+            }
         ]
     }
 ])

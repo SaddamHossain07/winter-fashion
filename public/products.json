@@ -1,0 +1,306 @@
+[
+    {
+        "image": "https://example.com/nike_shoe1.jpg",
+        "name": "Air Max 270",
+        "brandName": "Nike",
+        "type": "Running Shoes",
+        "price": 129.99,
+        "rating": 4.5,
+        "shortDescription": "Experience ultimate comfort and style with the Nike Air Max 270 running shoes."
+    },
+    {
+        "image": "https://example.com/nike_shoe2.jpg",
+        "name": "React Infinity Run Flyknit",
+        "brandName": "Nike",
+        "type": "Running Shoes",
+        "price": 149.99,
+        "rating": 4.7,
+        "shortDescription": "Achieve your running goals with the Nike React Infinity Run Flyknit shoes."
+    },
+    {
+        "image": "https://example.com/nike_shoe3.jpg",
+        "name": "Jordan 1 Mid SE",
+        "brandName": "Nike",
+        "type": "Basketball Shoes",
+        "price": 159.99,
+        "rating": 4.8,
+        "shortDescription": "Dominate the court in style with the iconic Jordan 1 Mid SE basketball shoes."
+    },
+    {
+        "image": "https://example.com/nike_apparel1.jpg",
+        "name": "Dri-FIT Training Shorts",
+        "brandName": "Nike",
+        "type": "Athletic Shorts",
+        "price": 49.99,
+        "rating": 4.2,
+        "shortDescription": "Stay cool and comfortable during workouts with Nike Dri-FIT Training Shorts."
+    },
+    {
+        "image": "https://example.com/nike_apparel2.jpg",
+        "name": "Dry Element Running Jacket",
+        "brandName": "Nike",
+        "type": "Running Jacket",
+        "price": 89.99,
+        "rating": 4.0,
+        "shortDescription": "Conquer the elements with the Nike Dry Element Running Jacket."
+    }
+]
+
+  
+  [
+    {
+        "image": "https://example.com/adidas_sneaker1.jpg",
+        "name": "UltraBoost 20",
+        "brandName": "Adidas",
+        "type": "Sneakers",
+        "price": 119.99,
+        "rating": 4.7,
+        "shortDescription": "Step up your sneaker game with the Adidas UltraBoost 20 featuring unmatched comfort."
+    },
+    {
+        "image": "https://example.com/adidas_sneaker2.jpg",
+        "name": "Superstar Foundation",
+        "brandName": "Adidas",
+        "type": "Classic Sneakers",
+        "price": 79.99,
+        "rating": 4.6,
+        "shortDescription": "Iconic style meets comfort with the Adidas Superstar Foundation sneakers."
+    },
+    {
+        "image": "https://example.com/adidas_apparel1.jpg",
+        "name": "Essentials 3-Stripes T-Shirt",
+        "brandName": "Adidas",
+        "type": "T-Shirt",
+        "price": 24.99,
+        "rating": 4.4,
+        "shortDescription": "Stay stylish and sporty with the Adidas Essentials 3-Stripes T-Shirt."
+    },
+    {
+        "image": "https://example.com/adidas_apparel2.jpg",
+        "name": "Response Climacool Running Shorts",
+        "brandName": "Adidas",
+        "type": "Running Shorts",
+        "price": 34.99,
+        "rating": 4.3,
+        "shortDescription": "Conquer your runs with the Adidas Response Climacool Running Shorts."
+    }
+]
+
+  
+  [
+    {
+        "image": "https://example.com/gucci_bag1.jpg",
+        "name": "GG Marmont Small Matelassé Shoulder Bag",
+        "brandName": "Gucci",
+        "type": "Shoulder Bag",
+        "price": 1999.99,
+        "rating": 4.8,
+        "shortDescription": "Elevate your style with the iconic GG Marmont Matelassé Shoulder Bag from Gucci."
+    },
+    {
+        "image": "https://example.com/gucci_bag2.jpg",
+        "name": "Dionysus Mini Suede Shoulder Bag",
+        "brandName": "Gucci",
+        "type": "Shoulder Bag",
+        "price": 2199.99,
+        "rating": 4.9,
+        "shortDescription": "Make a statement with the Gucci Dionysus Mini Suede Shoulder Bag."
+    },
+    {
+        "image": "https://example.com/gucci_apparel1.jpg",
+        "name": "Ace Embroidered Low-Top Sneakers",
+        "brandName": "Gucci",
+        "type": "Sneakers",
+        "price": 649.99,
+        "rating": 4.7,
+        "shortDescription": "Step into luxury with the Gucci Ace Embroidered Low-Top Sneakers."
+    },
+    {
+        "image": "https://example.com/gucci_apparel2.jpg",
+        "name": "GG Jacquard Wool Sweater",
+        "brandName": "Gucci",
+        "type": "Sweater",
+        "price": 999.99,
+        "rating": 4.6,
+        "shortDescription": "Stay warm and stylish with the Gucci GG Jacquard Wool Sweater."
+    }
+]
+
+  [
+    {
+        "image": "https://example.com/zara_dress1.jpg",
+        "name": "Floral Print Mini Dress",
+        "brandName": "Zara",
+        "type": "Dress",
+        "price": 49.99,
+        "rating": 4.2,
+        "shortDescription": "Turn heads in this beautiful floral print mini dress from Zara."
+    },
+    {
+        "image": "https://example.com/zara_dress2.jpg",
+        "name": "Striped Midi Wrap Dress",
+        "brandName": "Zara",
+        "type": "Wrap Dress",
+        "price": 59.99,
+        "rating": 4.4,
+        "shortDescription": "Stay chic and comfortable with the Zara Striped Midi Wrap Dress."
+    },
+    {
+        "image": "https://example.com/zara_jeans1.jpg",
+        "name": "High Waist Skinny Jeans",
+        "brandName": "Zara",
+        "type": "Jeans",
+        "price": 39.99,
+        "rating": 4.0,
+        "shortDescription": "Get a perfect fit with these stylish high waist skinny jeans from Zara."
+    },
+    {
+        "image": "https://example.com/zara_jeans2.jpg",
+        "name": "Wide Leg Denim Culottes",
+        "brandName": "Zara",
+        "type": "Culottes",
+        "price": 44.99,
+        "rating": 4.3,
+        "shortDescription": "Step up your fashion game with Zara's Wide Leg Denim Culottes."
+    }
+]
+
+  
+  [
+    {
+        "image": "https://example.com/hm_jeans1.jpg",
+        "name": "Skinny Fit High Waist Jeans",
+        "brandName": "H&M",
+        "type": "Jeans",
+        "price": 39.99,
+        "rating": 4.0,
+        "shortDescription": "Get a perfect fit with these stylish high waist skinny jeans from H&M."
+    },
+    {
+        "image": "https://example.com/hm_jeans2.jpg",
+        "name": "Boyfriend Fit Distressed Jeans",
+        "brandName": "H&M",
+        "type": "Jeans",
+        "price": 49.99,
+        "rating": 4.1,
+        "shortDescription": "Rock the relaxed look with H&M's Boyfriend Fit Distressed Jeans."
+    },
+    {
+        "image": "https://example.com/hm_tshirt1.jpg",
+        "name": "Basic Crew Neck T-Shirt",
+        "brandName": "H&M",
+        "type": "T-Shirt",
+        "price": 9.99,
+        "rating": 4.4,
+        "shortDescription": "Keep it simple and stylish with the H&M Basic Crew Neck T-Shirt."
+    },
+    {
+        "image": "https://example.com/hm_tshirt2.jpg",
+        "name": "Oversized Graphic T-Shirt",
+        "brandName": "H&M",
+        "type": "T-Shirt",
+        "price": 14.99,
+        "rating": 4.2,
+        "shortDescription": "Make a statement with H&M's Oversized Graphic T-Shirt."
+    }
+]
+
+  
+  [
+    {
+        "image": "https://example.com/levis_jeans1.jpg",
+        "name": "501 Original Fit Jeans",
+        "brandName": "Levi's",
+        "type": "Jeans",
+        "price": 59.99,
+        "rating": 4.6,
+        "shortDescription": "The classic Levi's 501 Original Fit Jeans - timeless style and comfort."
+    },
+    {
+        "image": "https://example.com/levis_jeans2.jpg",
+        "name": "Wedgie Fit High Waist Jeans",
+        "brandName": "Levi's",
+        "type": "Jeans",
+        "price": 69.99,
+        "rating": 4.5,
+        "shortDescription": "Flaunt your figure with Levi's Wedgie Fit High Waist Jeans."
+    },
+    {
+        "image": "https://example.com/levis_jacket1.jpg",
+        "name": "Classic Trucker Jacket",
+        "brandName": "Levi's",
+        "type": "Jacket",
+        "price": 89.99,
+        "rating": 4.4,
+        "shortDescription": "Stay trendy and cozy with the Levi's Classic Trucker Jacket for all seasons."
+    },
+    {
+        "image": "https://example.com/levis_jacket2.jpg",
+        "name": "Sherpa Trucker Jacket",
+        "brandName": "Levi's",
+        "type": "Jacket",
+        "price": 99.99,
+        "rating": 4.3,
+        "shortDescription": "Stay warm and stylish with the Levi's Sherpa Trucker Jacket."
+    }
+]
+// server.js
+
+const express = require('express');
+const mongoose = require('mongoose');
+const app = express();
+const port = 3001;
+
+// Connect to your MongoDB database
+mongoose.connect('mongodb: //localhost/your_database_name', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
+
+const Brand = mongoose.model('Brand',
+{
+  name: String,
+});
+
+const Product = mongoose.model('Product',
+{
+  name: String,
+  brand: String,
+// Add other fields like type, price, etc.
+});
+
+// Middleware for parsing JSON data
+app.use(express.json());
+
+// Define API routes
+app.get('/api/brands', async (req, res) => {
+  try {
+    const brands = await Brand.find();
+    res.json(brands);
+} catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Failed to fetch brands'
+    });
+}
+});
+
+app.get('/api/products/:brandName', async (req, res) => {
+  const brandName = req.params.brandName;
+
+  try {
+    const products = await Product.find({ brand: brandName
+    });
+    res.json(products);
+} catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Failed to fetch products'
+    });
+}
+});
+
+// Add more routes as needed for CRUD operations on brands and products
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port
+}`);
+});
