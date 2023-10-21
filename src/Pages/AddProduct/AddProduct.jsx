@@ -15,7 +15,7 @@ const AddProduct = () => {
         const image = form.image.value
         const newProduct = { name, brandName, type, price, rating, description, image }
         console.log(newProduct)
-        fetch('http://localhost:5000/products', {
+        fetch('https://b8a10-brandshop-server-side-saddam-hossain0743.vercel.app/products', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

@@ -9,7 +9,7 @@ const SiteConfig = () => {
         const formData = { siteName, siteLogo }
         console.log(formData)
 
-        fetch('http://localhost:5000/site', {
+        fetch('https://b8a10-brandshop-server-side-saddam-hossain0743.vercel.app/site', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
