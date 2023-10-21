@@ -14,9 +14,10 @@ const Home = () => {
             .then(data => {
                 console.log(data)
                 setAllProducts(data)
+            }).catch(error => {
+                console.log(error)
             })
     }, [])
-    console.log(allProducts)
     return (
         <div >
             <Banner></Banner>
