@@ -11,7 +11,7 @@ const ViewDetail = () => {
 
     const handleAddToCart = () => {
         const cartItem = { name, image, user }
-        fetch('https://b8a10-brandshop-server-side-saddam-hossain0743.vercel.app/cart', {
+        fetch('https://b8a10-brandshop-server-side-saddam-hossain07.vercel.app/cart', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

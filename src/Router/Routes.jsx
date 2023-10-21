@@ -23,7 +23,7 @@ const Routes = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>,
-                loader: () => fetch('https://b8a10-brandshop-server-side-saddam-hossain0743.vercel.app/brands')
+                loader: () => fetch('https://b8a10-brandshop-server-side-saddam-hossain07.vercel.app/brands')
             },
             {
                 path: '/addProduct',
@@ -32,22 +32,22 @@ const Routes = createBrowserRouter([
             {
                 path: '/products/:id',
                 element: <PrivateRout><ViewDetail></ViewDetail></PrivateRout>,
-                loader: ({ params }) => fetch(`https://b8a10-brandshop-server-side-saddam-hossain0743.vercel.app/products/${params.id}`)
+                loader: ({ params }) => fetch(`https://b8a10-brandshop-server-side-saddam-hossain07.vercel.app/products/${params.id}`)
             },
             {
                 path: '/products/update/:id',
                 element: <PrivateRout><UpdatePage></UpdatePage></PrivateRout>,
-                loader: ({ params }) => fetch(`https://b8a10-brandshop-server-side-saddam-hossain0743.vercel.app/products/${params.id}`)
+                loader: ({ params }) => fetch(`https://b8a10-brandshop-server-side-saddam-hossain07.vercel.app/products/${params.id}`)
             },
             {
                 path: '/products/brand/:brandName',
                 element: <BrandProducts />,
-                loader: ({ params }) => fetch(`https://b8a10-brandshop-server-side-saddam-hossain0743.vercel.app/products/brand/${params.brandName}`)
+                loader: ({ params }) => fetch(`https://b8a10-brandshop-server-side-saddam-hossain07.vercel.app/products/brand/${params.brandName}`)
             },
             {
                 path: '/myCart',
                 element: <PrivateRout><MyCart></MyCart></PrivateRout>,
-                loader: () => fetch(`https://b8a10-brandshop-server-side-saddam-hossain0743.vercel.app/cart`)
+                loader: () => fetch(`https://b8a10-brandshop-server-side-saddam-hossain07.vercel.app/cart`)
             },
             {
                 path: '/login',
@@ -72,7 +72,7 @@ const Routes = createBrowserRouter([
                 ]
             }
         ],
-        loader: () => fetch('https://b8a10-brandshop-server-side-saddam-hossain0743.vercel.app/site')
+        loader: () => fetch('https://b8a10-brandshop-server-side-saddam-hossain07.vercel.app/site')
     }
 ])
 

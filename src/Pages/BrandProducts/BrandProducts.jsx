@@ -7,7 +7,7 @@ const BrandProducts = () => {
     const { brandName } = useParams()
     console.log(brand)
     useEffect(() => {
-        fetch('https://b8a10-brandshop-server-side-saddam-hossain0743.vercel.app/products')
+        fetch('https://b8a10-brandshop-server-side-saddam-hossain07.vercel.app/products')
             .then(res => res.json())
             .then(data => {
                 console.log(data)
