@@ -1,6 +1,6 @@
 [
     {
-        "image": "https://example.com/nike_shoe1.jpg",
+        "image": "https://i.ibb.co/gdpQzND/Air-Max-270.jpg",
         "name": "Air Max 270",
         "brandName": "Nike",
         "type": "Running Shoes",
@@ -9,7 +9,7 @@
         "shortDescription": "Experience ultimate comfort and style with the Nike Air Max 270 running shoes."
     },
     {
-        "image": "https://example.com/nike_shoe2.jpg",
+        "image": "https://i.ibb.co/ctPG3MH/React-Infinity-Run-Flyknit.jpg",
         "name": "React Infinity Run Flyknit",
         "brandName": "Nike",
         "type": "Running Shoes",
@@ -18,7 +18,7 @@
         "shortDescription": "Achieve your running goals with the Nike React Infinity Run Flyknit shoes."
     },
     {
-        "image": "https://example.com/nike_shoe3.jpg",
+        "image": "https://i.ibb.co/BcZrYBV/Jordan-1-Mid-SE.jpg",
         "name": "Jordan 1 Mid SE",
         "brandName": "Nike",
         "type": "Basketball Shoes",
@@ -27,7 +27,7 @@
         "shortDescription": "Dominate the court in style with the iconic Jordan 1 Mid SE basketball shoes."
     },
     {
-        "image": "https://example.com/nike_apparel1.jpg",
+        "image": "https://i.ibb.co/mzsdtpB/Dri-FIT-Training-Shorts.png",
         "name": "Dri-FIT Training Shorts",
         "brandName": "Nike",
         "type": "Athletic Shorts",
@@ -36,7 +36,7 @@
         "shortDescription": "Stay cool and comfortable during workouts with Nike Dri-FIT Training Shorts."
     },
     {
-        "image": "https://example.com/nike_apparel2.jpg",
+        "image": "https://i.ibb.co/sysy677/Dry-Element-Running-Jacket.jpg",
         "name": "Dry Element Running Jacket",
         "brandName": "Nike",
         "type": "Running Jacket",
@@ -46,10 +46,16 @@
     }
 ]
 
-  
-  [
+
+
+
+
+
+
+
+[
     {
-        "image": "https://example.com/adidas_sneaker1.jpg",
+        "image": "https://i.ibb.co/6Js7jrt/adidas-Ultra-Boost-20.jpg",
         "name": "UltraBoost 20",
         "brandName": "Adidas",
         "type": "Sneakers",
@@ -58,7 +64,7 @@
         "shortDescription": "Step up your sneaker game with the Adidas UltraBoost 20 featuring unmatched comfort."
     },
     {
-        "image": "https://example.com/adidas_sneaker2.jpg",
+        "image": "https://i.ibb.co/LPj49J0/Superstar-Foundation.jpg",
         "name": "Superstar Foundation",
         "brandName": "Adidas",
         "type": "Classic Sneakers",
@@ -67,7 +73,7 @@
         "shortDescription": "Iconic style meets comfort with the Adidas Superstar Foundation sneakers."
     },
     {
-        "image": "https://example.com/adidas_apparel1.jpg",
+        "image": "https://i.ibb.co/PGq40GP/Essentials-3-Stripes-T-Shirt.jpg",
         "name": "Essentials 3-Stripes T-Shirt",
         "brandName": "Adidas",
         "type": "T-Shirt",
@@ -76,7 +82,7 @@
         "shortDescription": "Stay stylish and sporty with the Adidas Essentials 3-Stripes T-Shirt."
     },
     {
-        "image": "https://example.com/adidas_apparel2.jpg",
+        "image": "https://i.ibb.co/bgxCcL9/Response-Climacool-Running-Shorts.png",
         "name": "Response Climacool Running Shorts",
         "brandName": "Adidas",
         "type": "Running Shorts",
@@ -86,10 +92,14 @@
     }
 ]
 
+
+
+
+
   
   [
     {
-        "image": "https://example.com/gucci_bag1.jpg",
+        "image": "https://i.ibb.co/GM2Fz79/GG-Marmont-Small-Matelass-Shoulder-Bag.jpg",
         "name": "GG Marmont Small Matelassé Shoulder Bag",
         "brandName": "Gucci",
         "type": "Shoulder Bag",
@@ -98,7 +108,7 @@
         "shortDescription": "Elevate your style with the iconic GG Marmont Matelassé Shoulder Bag from Gucci."
     },
     {
-        "image": "https://example.com/gucci_bag2.jpg",
+        "image": "https://i.ibb.co/DCBCRvD/Dionysus-Mini-Suede-Shoulder-Bag.jpg",
         "name": "Dionysus Mini Suede Shoulder Bag",
         "brandName": "Gucci",
         "type": "Shoulder Bag",
@@ -107,7 +117,7 @@
         "shortDescription": "Make a statement with the Gucci Dionysus Mini Suede Shoulder Bag."
     },
     {
-        "image": "https://example.com/gucci_apparel1.jpg",
+        "image": "https://i.ibb.co/ZgBfX6v/Ace-Embroidered-Low-Top-Sneakers.jpg",
         "name": "Ace Embroidered Low-Top Sneakers",
         "brandName": "Gucci",
         "type": "Sneakers",
@@ -116,7 +126,7 @@
         "shortDescription": "Step into luxury with the Gucci Ace Embroidered Low-Top Sneakers."
     },
     {
-        "image": "https://example.com/gucci_apparel2.jpg",
+        "image": "https://i.ibb.co/23Z1kwD/GG-Jacquard-Wool-Sweater.png",
         "name": "GG Jacquard Wool Sweater",
         "brandName": "Gucci",
         "type": "Sweater",
@@ -126,9 +136,13 @@
     }
 ]
 
+
+
+
+
   [
     {
-        "image": "https://example.com/zara_dress1.jpg",
+        "image": "https://i.ibb.co/BPw3RVG/Floral-Print-Mini-Dress.png",
         "name": "Floral Print Mini Dress",
         "brandName": "Zara",
         "type": "Dress",
@@ -137,7 +151,7 @@
         "shortDescription": "Turn heads in this beautiful floral print mini dress from Zara."
     },
     {
-        "image": "https://example.com/zara_dress2.jpg",
+        "image": "https://i.ibb.co/G734dfk/multicoloured-stripe-long-sleeve-midi-wrap-dress.jpg",
         "name": "Striped Midi Wrap Dress",
         "brandName": "Zara",
         "type": "Wrap Dress",
@@ -146,7 +160,7 @@
         "shortDescription": "Stay chic and comfortable with the Zara Striped Midi Wrap Dress."
     },
     {
-        "image": "https://example.com/zara_jeans1.jpg",
+        "image": "https://i.ibb.co/jLd0x20/High-Waist-Skinny-Jeans-2.png",
         "name": "High Waist Skinny Jeans",
         "brandName": "Zara",
         "type": "Jeans",
@@ -155,7 +169,7 @@
         "shortDescription": "Get a perfect fit with these stylish high waist skinny jeans from Zara."
     },
     {
-        "image": "https://example.com/zara_jeans2.jpg",
+        "image": "https://i.ibb.co/RH7930D/zara-wide-leg-jeans-denim.jpg",
         "name": "Wide Leg Denim Culottes",
         "brandName": "Zara",
         "type": "Culottes",

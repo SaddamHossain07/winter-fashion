@@ -1,3 +1,4 @@
+import Swal from "sweetalert2";
 
 const AddProduct = () => {
 
@@ -13,7 +14,7 @@ const AddProduct = () => {
         const image = form.image.value
         const newProduct = { name, brandName, type, price, rating, description, image }
         console.log(newProduct)
-        fetch('https://winter-fashion-server-hazel.vercel.app/products', {
+        fetch('http://localhost:5000/products', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -24,6 +25,14 @@ const AddProduct = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data)
+                Swal.fire({
+                    position: 'top-center',
+                    icon: 'success',
+                    title: 'Product added successfully!',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+                form.reset()
             })
     }
     return (
@@ -36,7 +45,7 @@ const AddProduct = () => {
                 <div className="space-y-6">
                     <div className="form-control w-full">
                         <label className="label">
-                            <span className="block text-sm font-medium leading-6 text-gray-900">Product Name</span>
+                            <span className="block text-sm font-medium leading-6 text-gray-900">Product Image</span>
                         </label>
                         <input type="text" name="image" placeholder="photo url http://example.com/img-1.png" className="input input-bordered w-full" />
                     </div>
@@ -46,7 +55,7 @@ const AddProduct = () => {
                             <label className="label">
                                 <span className="block text-sm font-medium leading-6 text-gray-900">Product Name</span>
                             </label>
-                            <input type="text" name="name" placeholder="Type here" className="input input-bordered w-full" />
+                            <input type="text" name="name" placeholder="Product Name" className="input input-bordered w-full" />
                         </div>
                         <div className="form-control w-full">
                             <label className="label">
@@ -68,14 +77,7 @@ const AddProduct = () => {
                             <label className="label">
                                 <span className="block text-sm font-medium leading-6 text-gray-900">Type</span>
                             </label>
-                            <select id="country" name="type" className="input input-bordered w-full">
-                                <option>nike</option>
-                                <option>adidas</option>
-                                <option>gucci</option>
-                                <option>zara</option>
-                                <option>h&m</option>
-                                <option>levies</option>
-                            </select>
+                            <input type="text" name="type" placeholder="Product Type" className="input input-bordered w-full" />
                         </div>
                         <div className="form-control w-full">
                             <label className="label">
@@ -100,7 +102,7 @@ const AddProduct = () => {
                     <div className="col-span-full">
                         <label className="block text-sm font-medium leading-6 text-gray-900">Description</label>
                         <div className="mt-2">
-                            <textarea name="description" rows="3" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                            <textarea name="description" rows="3" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 p-4" />
                         </div>
                     </div>
 
