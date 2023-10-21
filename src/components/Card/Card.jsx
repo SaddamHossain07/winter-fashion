@@ -26,6 +26,9 @@ const Card = ({ product }) => {
                     <Link to={`/products/${_id}`}>
                         <button className="btn btn-sm btn-info">View Detail</button>
                     </Link>
+                    <Link to={`/products/update/${_id}`}>
+                        <button className="btn btn-sm btn-info">Update</button>
+                    </Link>
                 </div>
             </div>
         </div>

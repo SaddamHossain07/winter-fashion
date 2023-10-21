@@ -4,13 +4,13 @@ import Home from "../Pages/Home/Home";
 import AddProduct from "../Pages/AddProduct/AddProduct";
 import MyCart from "../Pages/MyCart/MyCart";
 import Login from "../Pages/Authentication/Login";
-import Products from "../Pages/AddProduct/Products/Products";
 import Register from "../Pages/Authentication/Register";
 import Dashboard from "../Pages/Dashboard/Dashboard";
 import SiteConfig from "../Pages/Dashboard/SiteConfig";
 import CreateBrand from "../Pages/Dashboard/CreateBrand";
 import ViewDetail from "../Pages/ViewDetail/ViewDetail";
 import BrandProducts from "../Pages/BrandProducts/BrandProducts";
+import UpdatePage from "../Pages/UpdatePage/UpdatePage";
 
 const Routes = createBrowserRouter([
     {
@@ -27,13 +27,13 @@ const Routes = createBrowserRouter([
                 element: <AddProduct></AddProduct>,
             },
             {
-                path: '/products',
-                element: <Products></Products>,
-                loader: () => fetch('http://localhost:5000/products')
-            },
-            {
                 path: '/products/:id',
                 element: <ViewDetail></ViewDetail>,
+                loader: ({ params }) => fetch(`http://localhost:5000/products/${params.id}`)
+            },
+            {
+                path: '/products/update/:id',
+                element: <UpdatePage></UpdatePage>,
                 loader: ({ params }) => fetch(`http://localhost:5000/products/${params.id}`)
             },
             {
@@ -43,7 +43,8 @@ const Routes = createBrowserRouter([
             },
             {
                 path: '/myCart',
-                element: <MyCart></MyCart>
+                element: <MyCart></MyCart>,
+                loader: () => fetch(`http://localhost:5000/cart`)
             },
             {
                 path: '/login',

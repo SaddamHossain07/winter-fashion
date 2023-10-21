@@ -11,11 +11,11 @@ const Register = () => {
     const handleRegistration = e => {
         e.preventDefault()
         const form = e.target
-        const name = form.name.value
-        const profilePicture = form.profilePicture.value
+        const displayName = form.displayName.value
+        const photoURL = form.photoURL.value
         const email = form.email.value
         const password = form.password.value
-        const newUser = { name, profilePicture, email }
+        const newUser = { displayName, photoURL, email }
         console.log(newUser)
         setRegisterError('')
 
@@ -52,11 +52,11 @@ const Register = () => {
                 <form className="space-y-4 pt-6" onSubmit={handleRegistration} >
                     <div>
                         <label className="block mb-2 text-sm font-medium text-gray-900">Name</label>
-                        <input type="text" name="name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Your Name" required />
+                        <input type="text" name="displayName" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Your Name" required />
                     </div>
                     <div>
                         <label className="block mb-2 text-sm font-medium text-gray-900">Profile Picture</label>
-                        <input type="text" name="profilePicture" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Image URL http://example.com/img-1" />
+                        <input type="text" name="photoURL" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Image URL http://example.com/img-1" />
                     </div>
                     <div>
                         <label className="block mb-2 text-sm font-medium text-gray-900">Your email</label>

@@ -1,9 +1,36 @@
 import { useLoaderData } from "react-router-dom";
 import Marquee from "react-fast-marquee";
+import Swal from "sweetalert2";
+import { useContext } from "react";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 const ViewDetail = () => {
     const product = useLoaderData()
+    const { user } = useContext(AuthContext)
     const { name, brandName, type, price, rating, description, image } = product
+
+    const handleAddToCart = () => {
+        const cartItem = { name, image, user }
+        fetch('http://localhost:5000/cart', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(cartItem)
+
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                Swal.fire({
+                    position: 'top-center',
+                    icon: 'success',
+                    title: 'Product added to cart successfully!',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+            })
+    }
 
     return (
         <div>
@@ -35,7 +62,7 @@ const ViewDetail = () => {
                         <span className="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">{rating}</span>
                     </div>
 
-                    <button className="btn btn-primary w-full mt-10">Add To Cart</button>
+                    <button onClick={handleAddToCart} className="btn btn-primary w-full mt-10">Add To Cart</button>
                 </div>
             </div>
             <div className="w-10/12 mx-auto mt-6 mb-16">

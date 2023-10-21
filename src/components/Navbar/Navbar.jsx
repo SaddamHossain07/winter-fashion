@@ -1,9 +1,17 @@
 
-import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 const Navbar = ({ updatedSiteInfo }) => {
 
+    const { user, logout } = useContext(AuthContext)
+
     const { siteName, siteLogo } = updatedSiteInfo
+
+    const handleLogout = () => {
+        logout()
+    }
 
     const links = <>
         <li>
@@ -22,12 +30,6 @@ const Navbar = ({ updatedSiteInfo }) => {
             <NavLink to="/myCart" className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "underline" : ""
             }>My Cart
-            </NavLink>
-        </li>
-        <li>
-            <NavLink to="/login" className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "underline" : ""
-            }>Login
             </NavLink>
         </li>
         <li>
@@ -59,7 +61,20 @@ const Navbar = ({ updatedSiteInfo }) => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Logout</a>
+                {
+                    user ? <div className="flex gap-4 items-center">
+                        <h3>{user.displayName}</h3>
+                        <div className="w-10 rounded-full">
+                            <img className="rounded-full" src={user.photoURL} />
+                        </div>
+                        <button onClick={handleLogout} className="btn">Logout</button>
+
+                    </div> :
+                        <Link to='/login'>
+                            <button className="btn">login</button>
+                        </Link>
+                }
+
             </div>
         </div>
     );
