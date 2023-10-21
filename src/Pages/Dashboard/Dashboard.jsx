@@ -7,7 +7,7 @@ const Dashboard = () => {
                 <h3 className="text-xl font-bold text-blue-500 text-center">Dashboard</h3>
 
                 <div className="flex gap-6">
-                    <Link to='/dashboard/site-config'>Site Configuration</Link>
+                    <Link to='/dashboard'>Site Configuration</Link>
                     <Link to='/dashboard/create-brand'>Create Brand</Link>
                 </div>
             </nav>

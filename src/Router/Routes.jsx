@@ -11,11 +11,14 @@ import CreateBrand from "../Pages/Dashboard/CreateBrand";
 import ViewDetail from "../Pages/ViewDetail/ViewDetail";
 import BrandProducts from "../Pages/BrandProducts/BrandProducts";
 import UpdatePage from "../Pages/UpdatePage/UpdatePage";
+import PrivateRout from "./PrivateRout/PrivateRout";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 
 const Routes = createBrowserRouter([
     {
         path: '/',
         element: <Layout></Layout>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: '/',
@@ -24,16 +27,16 @@ const Routes = createBrowserRouter([
             },
             {
                 path: '/addProduct',
-                element: <AddProduct></AddProduct>,
+                element: <PrivateRout><AddProduct></AddProduct></PrivateRout>,
             },
             {
                 path: '/products/:id',
-                element: <ViewDetail></ViewDetail>,
+                element: <PrivateRout><ViewDetail></ViewDetail></PrivateRout>,
                 loader: ({ params }) => fetch(`http://localhost:5000/products/${params.id}`)
             },
             {
                 path: '/products/update/:id',
-                element: <UpdatePage></UpdatePage>,
+                element: <PrivateRout><UpdatePage></UpdatePage></PrivateRout>,
                 loader: ({ params }) => fetch(`http://localhost:5000/products/${params.id}`)
             },
             {
@@ -43,7 +46,7 @@ const Routes = createBrowserRouter([
             },
             {
                 path: '/myCart',
-                element: <MyCart></MyCart>,
+                element: <PrivateRout><MyCart></MyCart></PrivateRout>,
                 loader: () => fetch(`http://localhost:5000/cart`)
             },
             {
@@ -56,10 +59,10 @@ const Routes = createBrowserRouter([
             },
             {
                 path: '/dashboard',
-                element: <Dashboard></Dashboard>,
+                element: <PrivateRout><Dashboard></Dashboard></PrivateRout>,
                 children: [
                     {
-                        path: '/dashboard/site-config',
+                        path: '/dashboard',
                         element: <SiteConfig></SiteConfig>
                     },
                     {
