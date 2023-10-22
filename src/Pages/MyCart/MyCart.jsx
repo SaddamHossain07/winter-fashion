@@ -47,11 +47,7 @@ const MyCart = () => {
                 <img src="https://i.ibb.co/9912qbQ/view-detail-banner.png" alt="" />
             </div>
             <h2 className="text-5xl font-bold logoText mt-16 text-center">My Cart</h2>
-            <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 py-4 mt-6">
-                <Marquee className="text-xl text-white" pauseOnHover={true}>
-                    this is marquee
-                </Marquee>
-            </div>
+
             <div>
                 {
                     cartItems.map(item => <CartItem
