@@ -1,9 +1,11 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
+import Swal from "sweetalert2";
 
 const Register = () => {
     const [registerError, setRegisterError] = useState('')
+    const navigate = useNavigate()
 
 
     const { createUser } = useContext(AuthContext)
@@ -27,7 +29,6 @@ const Register = () => {
 
         createUser(email, password)
             .then(result => {
-                alert('user created successfully', result.user)
                 fetch('https://winter-fashion-server-ltun96orj-saddam-hossains-projects.vercel.app/users', {
                     method: 'POST',
                     headers: {
@@ -38,6 +39,14 @@ const Register = () => {
                     .then(res => res.json())
                     .then(data => {
                         console.log('user inserted into db', data)
+                        Swal.fire({
+                            position: 'top-center',
+                            icon: 'success',
+                            title: 'User created successfully!',
+                            showConfirmButton: false,
+                            timer: 1500
+                        })
+                        navigate('/login')
                     })
             })
             .catch(error => {
