@@ -9,7 +9,7 @@ const CreateBrand = () => {
         const newBrand = { brandName, brandLogo }
         console.log(newBrand)
 
-        fetch('https://b8a10-brandshop-server-side-saddam-hossain07.vercel.app/brands', {
+        fetch('https://b8a10-brandshop-server-side-saddam-hossain0743.vercel.app/brands', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

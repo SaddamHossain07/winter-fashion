@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const Card = ({ product }) => {
-    const { _id, name, brandName, type, price, rating, description, image } = product
+    const { _id, name, brandName, type, price, rating, image } = product
 
     const stars = [];
 
