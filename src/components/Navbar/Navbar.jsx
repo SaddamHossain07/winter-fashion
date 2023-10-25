@@ -32,12 +32,14 @@ const Navbar = ({ updatedSiteInfo }) => {
             }>My Cart
             </NavLink>
         </li>
-        <li>
-            <NavLink to="/dashboard" className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "underline" : ""
-            }>Dashboard
-            </NavLink>
-        </li>
+        {
+            user && <li>
+                <NavLink to="/dashboard" className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "underline" : ""
+                }>Dashboard
+                </NavLink>
+            </li>
+        }
     </>
     return (
         <div className="navbar bg-base-100 shadow-lg py-4">
