@@ -1,5 +1,6 @@
 # Project Name : Winter Fashion
 Winter Fashion is a simple E-commerce website developed using the latest technologies. We use ReactJS and Tailwind CSS for front-end, Expressjs and noSQL database MongoDB in back-end. The client site is hosted on firebase and the server site is hosted on vercel.
+<br/>
 
 ## Technologies used for this project
 <br/>
@@ -37,7 +38,7 @@ In product detail page we can see the add to cart button. users are able to add 
 <hr/>
 <br/>
 
-### Please visit Winter Fashion website for better experience here :
+## Please visit Winter Fashion website for better experience here :
 - https://winter-fashion-e713e.web.app/
 
 ## client side github link :
